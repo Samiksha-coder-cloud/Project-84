@@ -3,16 +3,16 @@ ctx=canvas.getContext("2d")
 
 var background_Image="bg car.jpg";
 
-var car1Height=100;
+var car1Height=150;
 var car1Width=100;
 var car1X=10;
 var car1Y=10;
 var car1Image="car1.png";
 
-var car2Height=100;
+var car2Height=150;
 var car2Width=100;
 var car2X=10;
-var car2Y=10;
+var car2Y=130;
 var car2Image="car2.png";
 
 
