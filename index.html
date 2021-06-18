@@ -18,7 +18,19 @@ h1,h4
 {
 	color: white !important;
 }
-</style>		
+
+#game_status {
+	color:green;
+	font-size: 30px;
+    font-weight: bold;
+}
+
+hr {
+	background-color:magenta;
+}
+
+</style>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -30,6 +42,10 @@ h1,h4
 <h4>
 	<b>NOTE : </b> IF CAR IS NOT VISIBLE PRESS ANY ARROW KEY
 </h4>
+
+<hr>
+<div id="game_status"> </div>
+<hr>
 
 <canvas id="myCanvas" height="550" width="800"></canvas>
 

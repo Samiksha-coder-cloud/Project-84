@@ -92,6 +92,18 @@ function mykeyDown(e) {
         car2_right();
         console.log("Key d is Pressed");
     }
+
+    //Checking if Won
+
+    if (car1X >= 700) {
+        console.log("car1 Won");
+        document.getElementById("game_status").innerHTML = "Red Car Has Won !!";
+    }
+
+    if (car2X >= 700) {
+        console.log("car2 Won");
+        document.getElementById("game_status").innerHTML = "White Car Has Won !!";
+    }
 }
 
 //Car1 code ⬇⬇
@@ -105,7 +117,7 @@ function car1_up() {
     }
 }
 function car1_down() {
-    if (car1Y >= 450) {
+    if (car1Y <= 450) {
         car1Y= car1Y+10;
         console.log(car1Y);
         drawBackground();
@@ -123,7 +135,7 @@ function car1_left() {
     }
 }
 function car1_right() {
-    if (car1X >= 700) {
+    if (car1X <= 700) {
         car1X = car1X+10;
         console.log(car1X);
         drawBackground();
@@ -144,7 +156,7 @@ function car2_up() {
     }
 }
 function car2_down() {
-    if (car2Y >= 450) {
+    if (car2Y <= 450) {
         car2Y= car2Y+10;
         console.log(car2Y);
         drawBackground();
@@ -162,7 +174,7 @@ function car2_left() {
     }
 }
 function car2_right() {
-    if (car2X >= 700) {
+    if (car2X <= 700) {
         car2X = car2X+10;
         console.log(car2X);
         drawBackground();
